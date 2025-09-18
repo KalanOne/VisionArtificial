@@ -45,24 +45,28 @@ cd Introduccion
 4. (Opcional) Registrar el kernel en Jupyter Notebook o JupyterLab:
 
    ```bash
-   python -m ipykernel install --user --name=venv-vision --display-name "Python (Vision .venv)"
+   python -m ipykernel install --user --name=venv-introduccion --display-name "Python (Introduccion .venv)"
    ```
 
 ---
 
 ## ▶️ Uso
 
-Ejecuta el script principal:
+Ejecuta el notebook principal:
+
+1. Abre **Jupyter Notebook** o **JupyterLab**:
 
 ```bash
-python app.py
-```
+jupyter lab      # o jupyter notebook
+````
 
-Pasos en la aplicación:
+2. Navega a la carpeta del proyecto y abre `app.ipynb`.
+3. Ejecuta las celdas del notebook siguiendo los pasos de la aplicación.
+4. En la celda que crea la ventana:
 
-1. Haz clic en **Abrir** para cargar una imagen.
-2. Haz clic en **Convertir a gris** para transformarla.
-3. Haz clic en **Guardar** para exportar la imagen convertida.
+   * Haz clic en **Abrir** para cargar una imagen.
+   * Haz clic en **Convertir a gris** para transformarla.
+   * Haz clic en **Guardar** para exportar la imagen convertida.
 
 ---
 
@@ -70,10 +74,21 @@ Pasos en la aplicación:
 
 ```
 .
-├── app.py               # Script principal con la aplicación
+├── app.ipynb            # Notebook principal con la aplicación
 ├── README.md            # Este archivo
 └── requirements.txt     # Dependencias del proyecto
 ```
+
+
+---
+
+📌 Notas importantes para Jupyter:  
+
+- Asegúrate de que el kernel del notebook esté usando el **.venv** correcto donde instalaste `pyside6`, `pillow` e `ipykernel`.  
+- Si no aparece tu entorno en el menú de kernels, ejecuta:
+```bash
+python -m ipykernel install --user --name=venv-introduccion --display-name "Python (Introduccion .venv)"
+````
 
 ---
 
